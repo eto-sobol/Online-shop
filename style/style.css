@@ -1,10 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    margin: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -30,58 +30,56 @@ p {
 .header-wrap {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
-.logo {
-    margin-right: 40px;
+.header-left {
+    display: flex;
+    align-items: flex-end;
+    column-gap: 41px;
 }
 
-.account {
-    margin: 0 33px;
+.header-right {
+    display: flex;
+    align-items: center;
+    column-gap: 33px;
+}
+
+.header-button {
+    background: none;
+    border: none;
 }
 
 .promo {
+    min-height: 765px;
     background-color: #F1E4E6;
 }
 
 .promo-wrap {
+    min-height: 765px;
+    background-image: url(../img/promo-man.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
-
-.promo-content {
-    margin-right: 98px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 405px;
-    height: 93.1px;
-    box-sizing: border-box;
-}
-
-.separator {
-    width: 12px;
-    height: 92px;
-    background-color: #F16D7F;
-    margin-right: 16px;
+    justify-content: end;
 }
 
 h1 {
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-right: 98px;
     font-style: normal;
     font-weight: 900;
     font-size: 48px;
-    line-height: 58px;
+    line-height: 40px;
     color: #222222;
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
 }
 
-.slogan-text {
+.small-text {
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
-    line-height: 38px;
     color: #222222;
 }
 
@@ -91,27 +89,16 @@ h1 {
 
 .content {
     flex-grow: 1;
+    margin-top: 65px;
 }
 
 .offer-wrap {
-    margin-top: 65px;
-    margin-bottom: 96px;
-}
-
-.offer-parent {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.offer-item {
-    position: relative;
-}
-
 .offer-text {
-    position: absolute;
-    top: 105px;
-    left: 103px;
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -127,25 +114,37 @@ h1 {
     color: #F16D7F;
 }
 
-.offer {
+.offer-item {
+    background-color: #C4C4C4;
+    width: 360px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.offer-item--accesories {
     margin-top: 30px;
-    position: relative;
-}
-
-.accesories-img {
     width: 100%;
+    height: 180px;
+    background-image: url(../img/accesories.jpg);
 }
 
-.accesories-text {
-    position: absolute;
-    top: 65px;
-    left: 490px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: #FFFFFF;
+.offer-item--kids {
+    background-image: url(../img/for-kids.jpg);
+}
+
+
+.offer-item--men {
+    background-image: url(../img/for-men.jpg);
+}
+
+.offer-item--women {
+    background-image: url(../img/for-women.jpg);
+}
+
+.items-wrap {
+    margin-top: 96px;
 }
 
 .items-text {
@@ -169,9 +168,7 @@ h1 {
     text-align: center;
 }
 
-.cards {
-    height: 1192px;
-}
+.cards {}
 
 .more-wrap {
     margin-top: 48px;
@@ -233,7 +230,7 @@ h4 {
 }
 
 .subscribe {
-    background-image: url(/img/subscribe.jpg);
+    background-image: url(../img/subscribe.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
