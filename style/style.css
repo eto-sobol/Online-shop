@@ -65,7 +65,7 @@ p {
     justify-content: end;
 }
 
-h1 {
+.slogan {
     margin-right: 98px;
     font-style: normal;
     font-weight: 900;
@@ -76,14 +76,14 @@ h1 {
     padding-left: 16px;
 }
 
-.small-text {
+.small-slogan {
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     color: #222222;
 }
 
-.pink-text {
+.pink-slogan {
     color: #F16D7F;
 }
 
@@ -92,13 +92,13 @@ h1 {
     margin-top: 65px;
 }
 
-.offer-wrap {
+.category-wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.offer-text {
+.category-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -106,7 +106,7 @@ h1 {
     color: #FFFFFF;
 }
 
-.offer-heading {
+.category-heading {
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
@@ -114,7 +114,7 @@ h1 {
     color: #F16D7F;
 }
 
-.offer-item {
+.category-item {
     background-color: #C4C4C4;
     width: 360px;
     height: 260px;
@@ -123,35 +123,35 @@ h1 {
     justify-content: center;
 }
 
-.offer-item--accesories {
+.category-item--accesories {
     margin-top: 30px;
     width: 100%;
     height: 180px;
     background-image: url(../img/accesories.jpg);
 }
 
-.offer-item--kids {
+.category-item--kids {
     background-image: url(../img/for-kids.jpg);
 }
 
 
-.offer-item--men {
+.category-item--men {
     background-image: url(../img/for-men.jpg);
 }
 
-.offer-item--women {
+.category-item--women {
     background-image: url(../img/for-women.jpg);
 }
 
-.items-wrap {
+.offer {
     margin-top: 96px;
 }
 
-.items-text {
+.offer-text {
     margin-bottom: 48px;
 }
 
-.items-heading {
+.offer-heading {
     font-weight: 400;
     font-size: 30px;
     line-height: 36px;
@@ -159,7 +159,7 @@ h1 {
     text-align: center;
 }
 
-.items-subtitle {
+.offer-subtitle {
     margin-top: 6px;
     font-weight: 400;
     font-size: 14px;
@@ -168,14 +168,9 @@ h1 {
     text-align: center;
 }
 
-.cards {}
-
 .more-wrap {
     margin-top: 48px;
     margin-bottom: 95px;
-}
-
-.more {
     display: flex;
     justify-content: center;
 }
@@ -191,6 +186,7 @@ h1 {
     line-height: 19px;
     color: #F26376;
     text-align: center;
+    text-decoration: none;
 }
 
 .features {
@@ -213,7 +209,7 @@ h1 {
     Height: 134px;
 }
 
-h4 {
+.feature-heading {
     font-style: normal;
     font-weight: 400;
     font-size: 19.96px;
@@ -229,13 +225,13 @@ h4 {
     color: #FBFBFB;
 }
 
-.subscribe {
+.callback {
     background-image: url(../img/subscribe.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.subscribe-wrap {
+.callback-wrap {
     padding-top: 97px;
     padding-bottom: 126px;
     display: flex;
@@ -243,7 +239,7 @@ h4 {
     align-items: center;
 }
 
-.subscribe-info {
+.review {
     width: 359.45px;
     height: 225px;
     display: flex;
@@ -252,7 +248,7 @@ h4 {
     align-items: center;
 }
 
-.subscribe-text {
+.review-text {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
@@ -261,12 +257,13 @@ h4 {
     padding-bottom: 30px;
 }
 
-.form {
+.subscribe {
     display: flex;
     flex-direction: column;
+    margin-right: 97px;
 }
 
-.form-heading {
+.subscribe-heading {
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -275,9 +272,51 @@ h4 {
     color: #222224;
 }
 
-.form-subtitle {
+.subscribe-subtitle {
     font-weight: 400;
     font-size: 18px;
+}
+
+.subscribe-form {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.subscribe-field {
+    width: 256px;
+    background: #E1E1E1;
+    border: none;
+    color: #F16D7F;
+    padding: 16px;
+    padding-left: 22px;
+    border-radius: 20px 0 0 20px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    opacity: 0.67;
+}
+
+.subscribe-field::placeholder {
+    color: #222224;
+}
+
+.subscribe-button {
+    padding: 16px 20px;
+    background: #F16D7F;
+    border: none;
+    color: #fff;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    text-align: center;
+    border-radius: 0 20px 20px 0;
 }
 
 .footer {
@@ -300,8 +339,14 @@ h4 {
 }
 
 .socials {
-    height: 32px;
-    width: 148px;
     display: flex;
     justify-content: space-between;
+    column-gap: 7.3px;
+}
+
+.hidden {
+    position: absolute;
+    width: 0.1px;
+    height: 0.1px;
+    clip: rect(0px 0px 0px 0px);
 }
