@@ -173,6 +173,7 @@ p {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
 .card {
@@ -183,6 +184,10 @@ p {
 
 .card-content {
     padding: 24px 28px 20px 16px;
+}
+
+.addto-cart {
+    border: none;
 }
 
 .card-heading {
@@ -356,6 +361,10 @@ p {
     align-items: center;
     text-align: center;
     border-radius: 0 20px 20px 0;
+}
+
+.subscribe-button:hover {
+    background-color: #E05C6E;
 }
 
 .footer {
