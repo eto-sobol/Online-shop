@@ -9,6 +9,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     font-family: 'Lato', sans-serif;
+    font-style: normal;
 }
 
 .wrap {
@@ -67,7 +68,7 @@ p {
 
 .slogan {
     margin-right: 98px;
-    font-style: normal;
+
     font-weight: 900;
     font-size: 48px;
     line-height: 40px;
@@ -77,7 +78,7 @@ p {
 }
 
 .small-slogan {
-    font-style: normal;
+
     font-weight: 700;
     font-size: 32px;
     color: #222222;
@@ -168,6 +169,45 @@ p {
     text-align: center;
 }
 
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 360px;
+    height: 581px;
+    background: #F8F8F8;
+}
+
+.card-content {
+    padding: 24px 28px 20px 16px;
+}
+
+.card-heading {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.card-text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    padding-top: 12px;
+    padding-bottom: 18px;
+}
+
+.price {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+}
+
 .more-wrap {
     margin-top: 48px;
     margin-bottom: 95px;
@@ -180,7 +220,7 @@ p {
     border: 1px solid #F26376;
     padding: 15px 39px;
     font-family: 'Lato';
-    font-style: normal;
+
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -210,7 +250,6 @@ p {
 }
 
 .feature-heading {
-    font-style: normal;
     font-weight: 400;
     font-size: 19.96px;
     line-height: 24px;
@@ -264,7 +303,7 @@ p {
 }
 
 .subscribe-heading {
-    font-style: normal;
+
     font-weight: 700;
     font-size: 24px;
     line-height: 30.1px;
@@ -292,7 +331,7 @@ p {
     padding-left: 22px;
     border-radius: 20px 0 0 20px;
     font-family: 'Lato';
-    font-style: normal;
+
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
@@ -310,7 +349,7 @@ p {
     border: none;
     color: #fff;
     font-family: 'Lato';
-    font-style: normal;
+
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
