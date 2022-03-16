@@ -398,3 +398,133 @@ p {
     height: 0.1px;
     clip: rect(0px 0px 0px 0px);
 }
+
+/* Стили для каталога */
+
+.breadcrumbs {
+    background-color: #F8F3F4;
+}
+
+.breadcrumbs-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.catalor-nav {
+    display: flex;
+    column-gap: 5px;
+
+}
+
+.breadcrumb,
+.slash {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+
+.breadcrumb:nth-child(5) {
+    font-weight: 700;
+    color: #F16D7F;
+}
+
+.catalog-heading {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+.catalog-content {
+    flex-grow: 1;
+    margin-top: 51px;
+}
+
+.filter {
+    margin-left: 16px;
+    display: flex;
+    margin-bottom: 65px;
+}
+
+.filter-btn {
+    background-color: #fff;
+    border: none;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.filter-group {
+    display: flex;
+    column-gap: 28px;
+    margin-left: 304px;
+}
+
+.filter-breadcrumb {
+    background-color: #fff;
+    border: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+
+.filter-arrow {
+    margin-left: 10px;
+}
+
+.filter-icon {
+    margin-left: 11px;
+}
+
+.catalog-offer {
+    margin-top: 0px;
+}
+
+.cards {
+    margin-bottom: 48px;
+}
+
+.pages-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 96px;
+}
+
+.pages {
+    display: flex;
+    align-items: center;
+    border: 1px solid #EBEBEB;
+    border-radius: 5px;
+}
+
+.pages-btn {
+    background-color: #fff;
+    border: none;
+    margin: 16px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #C4C4C4;
+}
+
+.pages-btn:nth-child(2) {
+    color: #EF5B70;
+}
+
+.pages-btn:nth-child(7) {
+    margin-right: 0px;
+}
+
+.pages-btn:nth-child(8) {
+    margin-left: 0px;
+}
